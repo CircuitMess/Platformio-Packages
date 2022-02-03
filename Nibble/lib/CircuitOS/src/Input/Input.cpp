@@ -165,3 +165,8 @@ void Input::preregisterButtons(Vector<uint8_t> pins){
 		registerButton(pin);
 	}
 }
+
+bool Input::getButtonState(uint8_t pin){
+	if(pin >= btnState.size()) return false;
+	return btnState[pin];
+}
