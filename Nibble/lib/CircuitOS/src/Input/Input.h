@@ -73,6 +73,8 @@ public:
 
 	void loop(uint _time) override;
 
+	bool getButtonState(uint8_t pin);
+
 protected:
 	uint8_t pinNumber = 0;
 	
